@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构解析</title>
+</head>
+<body>
+    <script>
+        //定义一个数组
+        //数组结构解析按索引取出数据
+        let  arr = [1,2,-10,-48,25];
+        //取出前两给元素
+        let [a,b] = arr;
+        console.log(a);
+        console.log(b);
+
+        //取出后两给数据信息
+        let [,,,c,d] = arr;
+        console.log(c);
+        console.log(d);
+
+        //拷贝对象
+        let [...arr1] = arr;
+        console.log(arr1);
+        console.log(arr1==arr);
+
+        //集合对象
+        const  p = {name:"zhangsan",age:18};
+        let  {name,age} = p;
+        console.log(name);
+        console.log(age);
+        
+        //计算总和Lambda表达式
+        const  e = (f,d) => f + d;
+        let e1 = e(1,2);
+        console.log(e1);
+
+        const  pp = {
+            name: "lisi",
+            age: 21 ,
+            seyHello(){
+                console.log("hello world");
+            }
+            };
+
+        pp.seyHello();
+
+        //函数输出
+        const  fun = ({name,age})=>{
+            console.log(name,age);
+        };
+
+        fun(p);
+
+    </script>
+</body>
+</html>
