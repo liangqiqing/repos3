@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seyHelloWrold-VUE</title>
+</head>
+<body>
+    <div id="app">
+        Name: <span v-text="name"></span><br>
+        Age: <span v-text="age"></span>
+    </div>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: `#app`,
+        data:{
+            name: "张三",
+            age: 20
+       }
+    });
+</script>
+</body>
+</html>
